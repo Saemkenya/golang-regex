@@ -1,0 +1,26 @@
+.       all chars + nu lines
+\.      period
+abc     letters
+123...  digits
+\w      alphanumeric chars
+\W      non alphanumeric chars
+\d      any digits
+\D      any non digits
+\s      whitespaces
+\S      non whitespaces
+\b      at ASCII word bounds
+\B      not at ASCII bounds
+[abc]   only a, b, or c 
+[^abc]  not a, b, nor c
+[a-z]   chars a to z
+[0-9]   nums 0 to 9
+{m}     m Repetitions
+{m, n}  m to n Repetitions
+*       zero or more Repetitions
++       one or more Repetitions
+?       optional char
+^...$   starts and ends
+(...)   capture group
+(.*)    capture all
+|       or operator
+(abc|def)   match abc or def

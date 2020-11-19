@@ -1,0 +1,48 @@
+0123456789
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+abcdefghijklmnopqrstuvwxyz
+a b c d e f g h i j k l m n o p q r s t u v w x y z
+*+?()|.^$[]{}
+
+bat mat pot sat cat rat pat vat hat hats
+couch pouch ouch out
+bu buz buzz buzzz buzzzz buzzzzz buzzzzzz
+
+// find: ^(\d{3})(\d{4})(\d{5})$ replace $1-$2-$3
+// find: ^(\d{3})-(\d{4})-(\d{5})$ replace $1$2$3
+
+111-2222-33333
+444-5555-66666
+777-8888-99999
+
+// find: ^https://(\w+\.(org|com|gov))$ replace: $1
+// find: ^(\w+\.(org|com|gov))$ replace: https://$1
+// find: ^https://(\w+\.(org|com|gov)/\w+)$ replace: $1
+// find: ^(https?)://(\w+\.(org|com|gov))(/\w+)$ replace: sub1:$1-sub2:$2-sub3:$3
+// find: ^sub1:(https?)-sub2:(\w+\.(org|com|gov))-sub3:(org|com|gov)$ replace: $1://www.$2
+
+// find: ^(https?)://(\w+\.\w+\.(org|com|gov))/(\w+)$ replace: protocal: $1 \nurl: $2 \npath: $4 \n
+
+https://www.golang.org/developer
+https://www.youtube.com/user
+http://www.kenya.gov/citizen
+
+https://golang.org/
+https://youtube.com
+http://kenya.gov
+
+
+
+
+
+protocal: https 
+url: www.golang.org 
+path: developer 
+
+protocal: https 
+url: www.youtube.com 
+path: user 
+
+protocal: http 
+url: www.kenya.gov 
+path: citizen 
